@@ -84,9 +84,8 @@ public class Ejemplo {
     public void allFilters(){
         llenarListas();
 
-        Flux<Movie> movies = Flux.fromIterable(movies1).mergeWith(Flux.fromIterable(movies2));
-
-        movies.filter(movie -> movie.getDurationInMin() > 120)
+        Flux.fromIterable(movies1).mergeWith(Flux.fromIterable(movies2))
+                .filter(movie -> movie.getDurationInMin() > 120)
                 .filter(movie -> movie.getScore() > 8.0)
                 .filter(movie -> movie.getDirector().equals("Peter Jackson"))
                 .subscribe(System.out::println);
