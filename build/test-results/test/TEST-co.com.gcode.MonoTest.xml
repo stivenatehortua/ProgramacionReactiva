@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.gcode.MonoTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-17T18:32:19" hostname="50HW014554.local" time="6.255">
+  <properties/>
+  <testcase name="monoTest1" classname="co.com.gcode.MonoTest" time="0.109"/>
+  <testcase name="fluxTest1" classname="co.com.gcode.MonoTest" time="0.093"/>
+  <testcase name="fluxTest2" classname="co.com.gcode.MonoTest" time="0.01"/>
+  <testcase name="fluxTest3" classname="co.com.gcode.MonoTest" time="0.003"/>
+  <testcase name="fluxTest4" classname="co.com.gcode.MonoTest" time="6.035"/>
+  <testcase name="fluxTest5" classname="co.com.gcode.MonoTest" time="0.003"/>
+  <system-out><![CDATA[hola mundo
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+1
+2
+3
+4
+5
+0
+1
+2
+3
+4
+1
+2
+3
+4
+5
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO reactor.Flux.Interval.1 - onSubscribe(FluxInterval.IntervalRunnable)
+[Test worker] INFO reactor.Flux.Interval.1 - request(unbounded)
+[parallel-1] INFO reactor.Flux.Interval.1 - onNext(0)
+[parallel-1] INFO reactor.Flux.Interval.1 - onNext(1)
+[parallel-1] INFO reactor.Flux.Interval.1 - onNext(2)
+[parallel-1] INFO reactor.Flux.Interval.1 - onNext(3)
+[parallel-1] INFO reactor.Flux.Interval.1 - onNext(4)
+[parallel-1] INFO reactor.Flux.Interval.1 - cancel()
+]]></system-err>
+</testsuite>
